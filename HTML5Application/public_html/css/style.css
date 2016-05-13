@@ -8,8 +8,12 @@ Website: http://geekslabs.com/
 /* Import fonts */
 @import url(http://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 @import url(line-icons.css);
+.test{
+        background: url("../img/bgs/default.jpg");
 
+}
 body {
+    background: url("../img/bgs/default.jpg");
     color: #797979;
     background: #eeeeee;
     font-family: 'Lato', sans-serif;
@@ -73,21 +77,22 @@ table tr th { color: #688a7e;}
     background-color: #f1f2f7;
 }
 .login-img-body{
-  background: url('../img/bg-1.jpg') no-repeat center center fixed; 
+  background: url('../img/bgs/default.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .login-img2-body{
-  background: url('../img/bg-1.jpg') no-repeat center center fixed; 
+  background: url('../img/bgs/default.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .login-img3-body{
-  background: url('../img/bg-1.jpg') no-repeat center center fixed; 
+    /**nine,default**/
+  background: url('../img/bgs/default.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

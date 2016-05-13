@@ -2,7 +2,43 @@
     "name": "HTML5Application",
     "version": "1.0.0",
     "keywords": ["util", "functional", "server", "client", "browser"],
-    "author": "team alpha",
+    "author":
+            [   {
+                    "name": "Adam Fuzm",
+                    "email": "fuzumoe@gmail.com",
+                    "matriculation number":"2819147"
+                },
+                {
+                    "name": "Kunal Saxena"
+                    ,
+                    "email": "kunal1991@hotmail.com"
+                    ,
+                    "matriculation number":"2606664"
+                },
+                {
+                    "name": "Janvi Adiecha"
+                    ,
+                    "email": "janvi.adiecha09@gmail.com"
+                    ,
+                    "matriculation number":"2671000"
+                }
+                , {
+                    "name": "Vipin shrimal"
+                    ,
+                    "email": "shrimalvipin@gmail.com"
+                    ,
+                    "matriculation number":"2798446"
+                },
+                , {
+                    "name": "Sushma kaushik"
+                    ,
+                    "email": "sushma.kaushik91@gmail.com"
+                    ,
+                    "matriculation number":"2719852"
+                    
+                }
+            ]
+    ,
     "contributors": [],
     "dependencies": {}
 }
