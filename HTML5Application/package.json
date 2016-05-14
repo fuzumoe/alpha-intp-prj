@@ -1,56 +1,47 @@
-
 {
-    "_comment": "",
-    "name": "HTML5Application",
-    "version": "1.0.0",
-    "keywords": ["util", "functional", "server", "client", "browser"],
-    "author": {
-        "name": "Team Alpha"
+  "name": "HTML5Application",
+  "version": "1.0.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": {
+    "name": "Team Alpha"
+  },
+  "contributors": [
+    {
+      "name": "Adam Fuzm",
+      "email": "fuzumoe@gmail.com",
+      "matriculation number": "2819147"
+    },
+    {
+      "name": "Kunal Saxena",
+      "email": "kunal1991@hotmail.com",
+      "matriculation number": "2606664"
+    },
+    {
+      "name": "Janvi Adiecha",
+      "email": "janvi.adiecha09@gmail.com",
+      "matriculation number": "2671000"
+    },
+    {
+      "name": "Vipin shrimal",
+      "email": "shrimalvipin@gmail.com",
+      "matriculation number": "2798446"
+    },
+    {
+      "name": "Sushma kaushik",
+      "email": "sushma.kaushik91@gmail.com",
+      "matriculation number": "2719852"
     }
-    ,
-    "contributors": [{
-            "name": "Adam Fuzm",
-            "email": "fuzumoe@gmail.com",
-            "matriculation number": "2819147"
-        },
-        {
-            "name": "Kunal Saxena"
-            ,
-            "email": "kunal1991@hotmail.com"
-            ,
-            "matriculation number": "2606664"
-        },
-        {
-            "name": "Janvi Adiecha"
-            ,
-            "email": "janvi.adiecha09@gmail.com"
-            ,
-            "matriculation number": "2671000"
-        }
-        , {
-            "name": "Vipin shrimal"
-            ,
-            "email": "shrimalvipin@gmail.com"
-            ,
-            "matriculation number": "2798446"
-        },
-        , {
-            "name": "Sushma kaushik"
-            ,
-            "email": "sushma.kaushik91@gmail.com"
-            ,
-            "matriculation number": "2719852"
-
-        }
-    ],
-    "dependencies": {
-        "npm": "v5.3.0",
-        "node": "v3.3.12",
-        "jQuery": "v1.10.2",
-        "Bootstrap": "v3.0.0",
-        "jQuery": "v1.10.2",
-        "jquery.nicescroll": "v3.5.0"
-
-
-    }
+  ],
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "multer": "^1.1.0"
+  }
 }
