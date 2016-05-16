@@ -1,24 +1,34 @@
 var app = angular.module('cms', []);
 
 
-
-//app.controller('onloading', function($scope,$http) {
-//     console.log("one");
-//	var refresh = function(){
-//    $http.get("/contactlist").success(function(response){
-//         console.log("recieved data");
-//          $scope.contactList = response;
-//          $scope.contact = "";
-//	});
-//};
-//	refresh();
-//    $scope.addContat = function(){
-//         $http.post('/contactlist',
-//         	$scope.contact).success(function(response){
-//         	console.log(response);
-//         	refresh(); 	
-//         });
+app.controller('login', function ($scope, $http) {
+    $scope.showSignUp = function () {
+        console.log("working fine :: showSignUp");
+        $("#login").css("display", "none");
+        $("#sighn-up").css("display", "block");
+    };
+//    $scope.clear = function () {
+//       console.log("working fine :: clear " +$("#login.username").val());
+//        $("#login.password").text("");
+////
+////        login.username = null;
 //    };
+
+
 });
 
- 
+app.controller('register', function ($scope, $http) {
+    $scope.goBackLogin = function () {
+        console.log("working fine :: goBackLogin");
+        $("#sighn-up").css("display", "none");
+        $("#login").css("display", "block");
+
+    };
+    $scope.clear = function () {
+
+    };
+    
+});
+
+
+
