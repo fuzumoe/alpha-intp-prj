@@ -48,7 +48,7 @@
     "karma": "^0.13.22"
   },
     "scripts": {
-        "start": "node ..\/..\/..\/http:\/localhost:3000\/HTML5Application\/index.html node server.js"
+        "start": "node server.js node server.js"
     }
 
 }
