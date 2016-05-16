@@ -1,0 +1,29 @@
+
+ 1. step 
+    mongo db
+ 2. show databases
+    use <database>;
+ 3 to insert do 
+    db.<database>.<schema>.insert()
+     for specific one do
+ 4. to find do 
+     db.<database>.<schema>.find()
+     db.<database>.<schema>.find(__id)
+
+#NB#.
+db.cms.userprofile.insert({
+       "user_name": "test",
+        "user_email": "test@test.com",
+        "user_password":"test",
+        "user_social_profile":{
+        "facebook": "test@facebook",
+                "twitter": "test@twitter",
+                "gmail":"test@gmail"
+        },
+        "role": {
+        "author": "0",
+                "reviewer": "1",
+                "chair": "0",
+        }
+
+})
