@@ -43,5 +43,8 @@
     "cookie-parser": "^1.4.1",
     "express": "^4.13.4",
     "multer": "^1.1.0"
+  },
+  "devDependencies": {
+    "karma": "^0.13.22"
   }
 }
