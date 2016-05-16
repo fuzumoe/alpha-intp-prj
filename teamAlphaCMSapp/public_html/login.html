@@ -31,10 +31,43 @@
   <body class="login-img3-body" contenteditable="true">
 
     <div class="container">
-<!--        <p> well there </p>-->
-      <div class="login-form">        
+
+        <form class="login-form"  id="sighn-up" ng-controller="signup">   
+           <div class="login-wrap">
+                            <p class="login-img"><i class="icon_id"></i></p>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="icon_profile"></i></span>
+                        <input type="text" class="form-control" placeholder="Full Name" autofocus="">
+                    </div>
+                     <div class="input-group">
+                        <span class="input-group-addon"><i class="icon_mail_alt"></i></span>
+                        <input type="text" class="form-control" placeholder="Email" autofocus="">
+                    </div>
+                       <div class="input-group">
+                        <span class="input-group-addon"><i class="icon_mail_alt"></i></span>
+                        <input type="text" class="form-control" placeholder="Retype-Email" autofocus="">
+                    </div>
+                     <div class="input-group">
+                        <span class="input-group-addon"><i class="  icon_key"></i></span>
+                        <input type="Password" class="form-control" placeholder="Password" autofocus="">
+                    </div>
+                     <div class="input-group">
+                        <span class="input-group-addon"><i class="  icon_key"></i></span>
+                        <input type="Password" class="form-control" placeholder="Retype-Password" autofocus="">
+                    </div>
+            
+                            <button class=" btn btn-primary btn-lg btn-block" type="button">Signup</button>
+                            <button class="btn btn-danger btn-lg btn-block" type="button">Clear</button>
+                </div>
+          </div>
+      </form>
+      <div class="login-form" id="login" ng-controller="signup">        
         <div class="login-wrap">
-<!--            <p class="login-img"><i class="icon_lock_alt"></i></p>-->
+            <p class="login-img"><i class="icon_lock_alt"></i></p>
+             
+                <div class="social social_facebook social-facebook"></div>
+              <div class ="social social_twitter social-twitter"></div>
+              <div class="social social_googleplus social-googleplus"> </div>
             <div class="input-group">
               <span class="input-group-addon"><i class="icon_profile"></i></span>
               <input type="text" class="form-control" placeholder="Username" autofocus="">
@@ -47,8 +80,9 @@
                 <input type="checkbox" value="remember-me"> Remember me
                 <span class="pull-right"> <a href="#"> Forgot Password?</a></span>
             </label>
-            <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
-            <button class="btn btn-info btn-lg btn-block" >Signup</button>
+<button class="btn btn-primary btn-lg btn-block" type="button">Login</button>
+<button class="btn btn-info btn-lg btn-block" type="button">Signup</button>
+<button class="btn btn-danger btn-lg btn-block" type="reset">Clear</button>
         </div>
       </div>
 
