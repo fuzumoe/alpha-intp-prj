@@ -1,15 +1,29 @@
-
+//https://docs.mongodb.com/manual/tutorial/query-documents/
  1. step 
-    mongo db
+    #mongo db
  2. show databases
-    use <database>;
+    #use <database>;
+    /****CRUD****/
  3 to insert do 
-    db.<database>.<schema>.insert()
-     for specific one do
+    #db.<database>.<schema>.insert()
  4. to find do 
-     db.<database>.<schema>.find()
-     db.<database>.<schema>.find(__id)
-
+     #db.<database>.<schema>.find()
+     #db.<database>.<schema>.find(__id)
+     #db.<database>.<schema>.findOne({_id,mongosjs.Id(id)}).
+     #db.<database>.<schema>.find({column:"value",column:"value",....})
+ 5. to update  
+     using find and modify
+     #db.<database>.<schema>.findAndModify(query:{_id,mongosjs.Id(id)},update:{$set{column:"vale",column=:"value",.......}},new=true)
+        OR
+     using update statement
+     #db.collection.update( <query>, <update>,{upsert: <boolean>,  multi: <boolean>, writeConcern: <document> })
+     *<query> => query:{_id,mongosjs.Id(id)}
+     *<update> => update:{$set{column:"vale",column=:"value",.......}
+      *upsert = true => Optional. If set to true, creates a new document when no document matches the query criteria. The default value is false, which does not insert a new document when no match is found.
+      *multi = true =>  Optional. If set to true, updates multiple documents that meet the query criteria. If set to false, updates one document. The default value is false. For additional information, see Multi Parameter.
+      *writeConcern = true =>   Optional. A document expressing the write concern. Omit to use the default write concern. See Write Concern.
+ 6. to delete
+     db.<database>.<schema>.remove({_id:mongosjs.Id(id)});
 #NB#.
 db.cms.userprofile.insert({
        "user_name": "test",
