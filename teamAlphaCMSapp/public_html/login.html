@@ -62,13 +62,14 @@
                     <button class="btn btn-danger btn-lg btn-block" type="reset">Clear</button>
                 </div>
             </form>
+            
             <form class="login-form" id="login" ng-controller="login">        
                 <div class="login-wrap">
                     <p class="login-img"><i class="icon_lock_alt"></i></p>
 
-                    <div class="social social_facebook social-facebook"></div>
-                    <div class ="social social_twitter social-twitter"></div>
-                    <div class="social social_googleplus social-googleplus"> </div>
+                    <div class="social social_facebook social-facebook" ng-click="facebokLogin()"></div>
+                    <div class ="social social_twitter social-twitter" ng-click="twitterLogin()"></div>
+                    <div class="social social_googleplus social-googleplus" ng-click="googlePlusLogin()"> </div>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="icon_profile"></i></span>
                         <input type="text" class="form-control" id="login.username" value="" placeholder="Username" autofocus="" ng-model="login.username"></input>
@@ -88,7 +89,7 @@
             </form>
 
         </div>
-
+        <!-- put  your javascript here -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
         <script src="js/jquery.js"></script>
         <script src="js/jquery-ui-1.10.4.min.js"></script>
